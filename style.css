@@ -1,0 +1,231 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+#heading {
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  background-position: center;              
+  width: 100%;  
+  height: 100vh;
+
+  
+}
+
+.caption {
+  font-weight: 650;
+  font-size: 100px;
+  color: white; 
+    margin-right: 200px;
+   
+  }
+
+@media (max-width: 992px) {  /* tablets and below */
+  .caption {
+    font-size: 60px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 768px) {  /* mobile */
+  .caption {
+    font-size: 40px;
+    line-height: 1.8;
+  }
+}
+
+
+.navbar .nav-link {
+  font-size: 1.5rem !important;
+  color: white !important;
+}
+ 
+.hero-text {
+margin-left:50%;
+}
+
+
+.italic {
+  font-style: italic;
+}
+
+.hero2 {
+  width: 100%;
+  height: 100%;   /* full screen width */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* spacing between cards */
+}
+/* Card hover effect */
+.hero2 .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero2 .card:hover {
+  transform: translateY(-10px); /* lifts the card up */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* adds shadow */
+}
+
+
+a.btn {
+  display: inline-block;          /* Makes anchor behave like a button */
+  background-color: #2835a7;      /* Custom blue (Bootstrap default is green) */
+  color: #fff;                    /* White text */
+  padding: 12px 36px;             /* Spacing inside button */
+  border-radius: 50px;            /* Large radius → pill shape */
+  font-size: 18px;                /* Bigger text */
+  font-weight: 600;               /* Semi-bold */
+  transition: 0.2s ease-in-out;   /* Smooth hover/active transitions */
+}
+a.btn:hover {
+  background-color: #e42243;   /* Darker shade on hover */
+  color: #dfe3f3;                 /* Keep text white */
+  transform: translateY(-2px); /* Small lift effect */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.night{
+  color: red;
+  font-weight: 1rem;
+}
+
+.enq {
+ justify-content: center;
+ align-content: center;
+ display: flex; 
+
+}
+
+.hero3 {
+height: 100vh;
+padding-left: 100px;  
+padding-right: 100px;
+}
+
+.carousel-inner img { 
+  height: 50vh;
+
+}
+
+.carousel-caption h2 {
+  color: blue;
+  text-shadow: #2835a7;
+  
+
+}
+.tour-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid #e0e0e0; /* light border */
+  padding: 25px;              /* space inside border */
+  background: #fff;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 250px;             /* fixed height */
+  object-fit: cover;         /* crops image */
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.tour-card:hover img {
+  transform: scale(1.1);
+}
+
+.tour-card .overlay {
+  position: absolute;
+  top: 6px; left: 6px; right: 6px; bottom: 6px; /* match padding */
+  border-radius: 8px;
+  background: rgba(0, 191, 165, 0.9);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+
+.tour-card:hover .overlay {
+  opacity: 1;
+}
+
+.tour-card .overlay h4 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.tour-card .overlay p {
+  margin: 6px 0;
+}
+
+.tour-card .overlay span {
+  font-weight: bold;
+  color: yellow;
+}
+
+.hero4 h2 {
+  margin-top: 100px;
+  margin-bottom: 40px;  /* adjust value as you like */
+}
+.feature-card {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 25px 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+.feature-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+.learn-more {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.learn-more:hover {
+  text-decoration: underline;
+}
+.testimonial-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.customer-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.stars {
+  font-size: 18px;
+  color: #fbc02d; /* yellow stars */
+}
+.hero6{
+  background-color: aliceblue;
+}
+
+.footer{
+  background-color: rgb(3, 3, 72);
+}

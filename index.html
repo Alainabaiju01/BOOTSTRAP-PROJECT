@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+<!-- bootstrap cdn -->
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  const popoverList = [...popoverTriggerList].map(
+    popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)
+  );
+</script>
+</head>
+<body>
+  
+<!-- hero1 -->
+  <div id="heading" class="heading">
+       
+            <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img width="200px" src="./images/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-5 py-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Packages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Transport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Support</a>
+            </li>
+    
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+
+<section id="hero-section" class="d-flex align-items-center justify-content-center">
+    <div class="hero-text text-center">
+      <p class="caption">
+        Travel <br>
+        <span class="italic">far enough</span><br>
+        You meet <br>yourself
+      </p>
+       </div>
+  </section>
+
+      
+
+      <div class="enq mt-3 ms-5">
+
+        <!-- enquire button -->
+        <div class="enqire mt-3 text-start ms-5">
+           <button type="button" class="btn btn-lg btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Enquiry
+           </button>
+        </div>
+
+      <!-- Enquiry Button -->
+
+
+<!-- Contact Us Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <!-- Modal Body with Form -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Type your message"></textarea>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Send</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+<!-- hero2 -->
+<div class="hero2">
+  <div class="container text-center">
+    <h2 class=" d-flex justify-content-center align-items-center text-center fw-2 fs-1 mb-5 mt-4">HONEYMOON PACKAGES</h2>
+  <div class="row">
+    <div class="col ">
+      <div class="card p-4" style="width: 18rem;">
+  <img src="./images/card1.jpeg" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">KARNATAKA HONEYMOON PACKAGES</h5>
+    <p class="night">(04nights/05nights) </p>
+    <p class="card-text">Honeymoon packages in Karnataka offer romantic escapes to destinations like the hills of Coorg and Chikmagalur,and the coastal beauty of Gokarna.</p>
+    <a href="#" class="btn btn-primary">BOOK NOW</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card p-4" style="width: 18rem;">
+  <img src="./images/card2.jpeg" class="card-img-top" alt="...">
+ 
+  <div class="card-body">
+    <h5 class="card-title">KERALA HONEYMOON PACKAGES</h5>
+    <p class="night">(04nights/05nights) </p>
+    <p class="card-text">Honeymoon packages in KERALA offer romantic escapes to diverse destinations like the hills of munnar and idukki, and the coastal beauty of kollam.</p>
+    <a href="#" class="btn btn-primary">BOOK NOW</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card p-4" style="width: 18rem;">
+  <img src="./images/card3.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">MANALI HONEYMOON PACKAGES</h5>
+    <p class="night">(04nights/05nights) </p>
+    <p class="card-text">Manali is an excellent honeymoon destination due to its scenic beauty, romantic ambiance, and blend of adventure and relaxation, offering activities</p>
+    <a href="#" class="btn btn-primary">BOOK NOW</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card p-4" style="width: 18rem;">
+  <img src="./images/card4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">KATHMANDU HONEYMOON PACKAGES</h5>
+    <p class="night">(04nights/05nights) </p>
+    <p class="card-text">A Nepal honeymoon offers a blend of adventure and relaxation, with options to explore the vibrant culture of the Kathmandu Valley, experiences</p>
+    <a href="#" class="btn btn-primary">BOOK NOW</a>
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
+  
+   <!-- More Packages button -->
+<div class="text-center mt-4">
+  <a href="#" class="btn  btn-lg rounded-pill px-5">MORE PACKAGES</a>
+</div>
+</div>
+ <!-- hero3 -->
+<div class="hero3">
+  <h2 class="d-flex justify-content-center align-items-center text-center fw-2 fs-1 mb-5 mt-4">
+    SPECIAL KERALA FESTIVAL TOOLS
+  </h2>
+
+  <!-- Top Half: Carousel -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h2 class="fw-bold py-5">KADHAKALI</h2>
+          <button type="button" class="btn btn-lg btn-success" data-bs-toggle="popover"
+            data-bs-title="Popover title"
+            data-bs-content="And here’s some amazing content. It’s very engaging. Right?">
+            More Details
+          </button>
+        </div>
+        <img src="./images/kadha.png" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h2 class="fw-bold py-5">THRISSUR POORAM</h2>
+          <button type="button" class="btn btn-lg btn-success" data-bs-toggle="popover"
+            data-bs-title="Popover title"
+            data-bs-content="And here’s some amazing content. It’s very engaging. Right?">
+            More Details
+          </button>
+        </div>
+        <img src="./images/thrissur.jpg" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h2 class="fw-bold py-5">KERALA BOAT RACE</h2>
+          <button type="button" class="btn btn-lg btn-success" data-bs-toggle="popover"
+            data-bs-title="Popover title"
+            data-bs-content="And here’s some amazing content. It’s very engaging. Right?">
+            More Details
+          </button>
+        </div>
+        <img src="./images/boat.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bottom Half: Videos -->
+  <div class="hero-bottom container d-flex mt-4 mb-4 ">
+    <div class="row">
+      <div class="col-md-6 hb1">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/R83BlU5nnbs?si=SepJQVvCLpRFRCj3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    
+  <div class="col-md-6 hb2 mt-5">
+      <div class="row g-2"> <!-- g-2 = gap between grid items -->
+        <div class="col-4"><img src="./images/gd1.jpg" class="img-fluid img-grid"></div>
+        <div class="col-4"><img src="./images/gd2.jpg" class="img-fluid img-grid"></div>
+        <div class="col-4"><img src="./images/gd3.jpeg" class="img-fluid img-grid"></div>
+        <div class="col-4"><img src="./images/gd4.jpg" class="img-fluid img-grid"></div>
+        <div class="col-4"><img src="./images/gd5.jpg" class="img-fluid img-grid"></div>
+        <div class="col-4"><img src="./images/gd6.jpg" class="img-fluid img-grid"></div>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div> <!-- hero3 ending -->
+ <!-- HERO4 -->
+<div class="hero4">
+  <div class="container text-center">
+    <h2 class="mb-4 mt-5">NORTH INDIAN TOURS</h2>
+    <div class="row justify-content-center g-4"><!-- g-4 = uniform gap -->
+      
+      <!-- Card 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="tour-card">
+          <img src="./images/varanasi.jpeg" alt="Varanasi">
+          <div class="overlay">
+            <h4>PUNJAB</h4>
+            <p>Rs : <span>14000/person</span></p>
+            <button class="btn btn-danger">BOOK NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="tour-card">
+          <img src="./images/kashmir.jpeg" alt="Kashmir">
+          <div class="overlay">
+            <h4>KASHMIR</h4>
+            <p>Rs : <span>16000/person</span></p>
+            <button class="btn btn-danger">BOOK NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="tour-card">
+          <img src="./images/gold.jpg" alt="Golden Temple">
+          <div class="overlay">
+            <h4>AMRITSAR</h4>
+            <p>Rs : <span>12000/person</span></p>
+            <button class="btn btn-danger">BOOK NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="tour-card">
+          <img src="./images/rajasthan.webp" alt="Rajasthan">
+          <div class="overlay">
+            <h4>RAJASTHAN</h4>
+            <p>Rs : <span>18000/person</span></p>
+            <button class="btn btn-danger">BOOK NOW</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Hero5 Section -->
+<div class="hero5 py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold">OUR PREMIUM FEATURES</h2>
+ <h3 class="mt-3" style="font-family: 'Brush Script MT', cursive; color:#cf6193;">WE will make your dreams come true</h3>
+
+    <div class="row justify-content-center g-4">
+      
+      <!-- Feature 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-card">
+          <img src="./images/bike.jpg" alt="Free Bike Ride">
+          <h5 class="mt-3 bold fs-4">FREE BIKE RIDE</h5>
+          <a href="#" class="learn-more  fs-5">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-card">
+          <img src="./images/fire.jpg" alt="Campfire">
+          <h5 class="mt-3 bold fs-4">CAMPFIRE</h5>
+          <a href="#" class="learn-more  fs-5">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-card">
+          <img src="./images/support.jpg" alt="24x7 Support">
+          <h5 class="mt-3 bold  fs-4">24x7 SUPPORT</h5>
+          <a href="#" class="learn-more  fs-5 ">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="feature-card">
+          <img src="./images/guide.jpg" alt="Tour Guide">
+          <h5 class="mt-3 bold fs-4">TOUR GUIDE</h5>
+          <a href="#" class="learn-more fs-5">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Hero6 Section -->
+<div class="hero6 py-5">
+  <div class="container text-center">
+    
+    <!-- Heading -->
+    <div class="mb-5">
+      <img src="./images/mail.jpg" alt="Mail Icon" width="40">
+      <h3 class="mt-3" style="font-family: 'Brush Script MT', cursive; color:#2c2cff;">
+        Our customers love
+      </h3>
+    </div>
+
+    <!-- Testimonials Row -->
+    <div class="row justify-content-center g-4">
+      
+      <!-- Testimonial 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="testimonial-card p-4">
+          <img src="./images/cp1.webp" class="customer-img" alt="Michael & Jenny">
+          <div class="stars mb-2">⭐⭐⭐⭐⭐</div>
+          <h5>Michael & Jenny</h5>
+          <p>"We created lots of wonderful memories and the trip was so nice."</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="testimonial-card p-4">
+          <img src="./images/cp2.jpg" class="customer-img" alt="Rohith & Amrutha">
+          <div class="stars mb-2">⭐⭐⭐⭐⭐</div>
+          <h5>Rohith & Amrutha</h5>
+          <p>"A truly satisfying experience. Travel Guide have a great coordination."</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="testimonial-card p-4">
+          <img src="./images/cp3.jpg" class="customer-img" alt="James & Anna">
+          <div class="stars mb-2">⭐⭐⭐⭐⭐</div>
+          <h5>James & Anna</h5>
+          <p>"They have really good packages at reasonable rates."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer  text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- About Us -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold text-warning">ABOUT US</h5>
+        <ul class="list-unstyled fs-4"  style="line-height:2.1">
+          <li><a href="#" class="text-white text-decoration-none">Our Company</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Our Management</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Connections</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Annual Reports</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Our Network</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5 class="fw-bold text-warning">SOCIAL MEDIA</h5>
+        <div class="d-flex justify-content-center gap-4 fs-4 mt-3">
+          <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore the World -->
+      <div class="col-md-4 mb-4 text-center">
+        <img src="./images/finalimg.png" alt="Explore the World" class="img-fluid mb-2" style="max-width:150px;">
+        <p class="fw-bold">Explore the World</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center mt-4 border-top pt-3">
+    <small>© Travel Guide 2025 | Developed by <span class="fw-bold text-warning">ALAINA BAIJU</span></small>
+  </div>
+</footer>
+
+
+</body>
+</html>
